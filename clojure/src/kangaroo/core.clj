@@ -1,5 +1,13 @@
 (ns kangaroo.core)
 
+
+;; V = d/t = d/j
+;; d = v * j
+;; x1 + v1*j = x2 + v2*j
+;; v1*j - v2*j = x2 - x1
+;; j(v1 - v2) = x2 - x1
+;; j = (x2 - x1) / (v1 - v2)
+
 ;; https://www.hackerrank.com/challenges/kangaroo/problem
 (defn kangaroo [x1 v1 x2 v2]
   (if (and (> v1 v2)
